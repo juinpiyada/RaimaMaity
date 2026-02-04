@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Raima Maity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0f172a',
+                        primary: '#10b981',
+                        secondary: '#3b82f6',
+                        accent: '#8b5cf6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #34d399, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-white font-sans selection:bg-primary selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass border-b-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html"
+                        class="text-2xl font-bold tracking-tighter hover:scale-105 transition-transform">
+                        <span class="text-primary">&lt;</span>Raima<span class="text-secondary">/&gt;</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html"
+                            class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 transition-all">Home</a>
+                        <a href="about.html"
+                            class="px-3 py-2 rounded-md text-sm font-medium text-white bg-white/10">About</a>
+                        <a href="skills.html"
+                            class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 transition-all">Skills
+                            & Tech</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700"
+                        onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:hidden glass" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/10">Home</a>
+                <a href="about.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-white bg-white/10">About</a>
+                <a href="skills.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/10">Skills</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+
+        <!-- Header -->
+        <div class="text-center mb-16 animate-fade-in-up">
+            <h1 class="text-4xl font-bold mb-4">About <span class="gradient-text">Me</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                Versatile and creative Full Stack Developer with a strong foundation in UI/UX design principles.
+                Dedicated to delivering seamless user experiences by bridging the gap between visual design, backend
+                functionality, and mobile performance.
+            </p>
+        </div>
+
+        <!-- Personal Info Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+            <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-colors">
+                <h3 class="text-xl font-semibold mb-6 flex items-center text-primary">
+                    <i class="fas fa-user-circle mr-3"></i> Contact Details
+                </h3>
+                <ul class="space-y-4 text-gray-300">
+                    <li class="flex items-center"><i class="fas fa-envelope w-6 text-gray-500"></i>
+                        raimamaity37@gmail.com</li>
+                    <li class="flex items-center"><i class="fas fa-phone w-6 text-gray-500"></i> +91 8240472753</li>
+                    <li class="flex items-center"><i class="fab fa-linkedin w-6 text-gray-500"></i>
+                        linkedin.com/in/raimamaity2004</li>
+                    <li class="flex items-center"><i class="fas fa-map-marker-alt w-6 text-gray-500"></i> Kolkata, West
+                        Bengal</li>
+                </ul>
+            </div>
+
+            <div class="glass p-8 rounded-2xl hover:bg-white/5 transition-colors">
+                <h3 class="text-xl font-semibold mb-6 flex items-center text-secondary">
+                    <i class="fas fa-bolt mr-3"></i> Strengths
+                </h3>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Quick learner of
+                        new frameworks & tools.</li>
+                    <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Debugging complex
+                        logical issues.</li>
+                    <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Transforming
+                        wireframes to code.</li>
+                    <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i> Effective
+                        teamwork & leadership.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <h2 class="text-3xl font-bold mb-10 flex items-center"><span
+                class="bg-primary w-2 h-8 mr-4 rounded-full"></span>Experience</h2>
+        <div class="relative border-l-2 border-white/10 ml-4 space-y-12 mb-20">
+
+            <!-- Job 1 -->
+            <div class="ml-10 relative">
+                <div class="absolute -left-[54px] w-5 h-5 bg-primary rounded-full border-4 border-dark"></div>
+                <div class="glass p-6 rounded-xl hover:border-primary/30 transition-all group">
+                    <span class="text-sm text-primary font-mono mb-2 block">June 2025 – Present</span>
+                    <h3 class="text-2xl font-bold group-hover:text-primary transition-colors">Web Developer</h3>
+                    <h4 class="text-lg text-gray-400 mb-4">AIMTECH Dynamics Private Limited</h4>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 marker:text-primary">
+                        <li>Architecting scalable web & mobile apps (React.js, Node.js, Flutter).</li>
+                        <li>Designing intuitive UI/UX and pixel-perfect responsive code.</li>
+                        <li>Optimizing PostgreSQL/MySQL queries (75% faster data retrieval).</li>
+                        <li>Collaborating on backend API integration.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="ml-10 relative">
+                <div class="absolute -left-[54px] w-5 h-5 bg-secondary rounded-full border-4 border-dark"></div>
+                <div class="glass p-6 rounded-xl hover:border-secondary/30 transition-all group">
+                    <span class="text-sm text-secondary font-mono mb-2 block">Sep 2024 - Nov 2024</span>
+                    <h3 class="text-2xl font-bold group-hover:text-secondary transition-colors">Web Development Intern
+                    </h3>
+                    <h4 class="text-lg text-gray-400 mb-4">IBM SkillsBuild</h4>
+                    <p class="text-gray-300 leading-relaxed">
+                        Gained exposure to professional SDLC. Participated in daily stand-ups, code reviews, and Agile
+                        simulations. Mastered industry-standard practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <h2 class="text-3xl font-bold mb-10 flex items-center"><span
+                class="bg-accent w-2 h-8 mr-4 rounded-full"></span>Education</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- College -->
+            <div class="glass p-6 rounded-xl relative overflow-hidden group">
+                <div
+                    class="absolute top-0 right-0 w-24 h-24 bg-accent/10 rounded-bl-full -mr-4 -mt-4 transition-all group-hover:bg-accent/20">
+                </div>
+                <h3 class="text-xl font-bold mb-1">BCA</h3>
+                <p class="text-sm text-gray-400 mb-4">2022 - 2025</p>
+                <p class="text-gray-300 font-medium">Swami Vivekananda Institute of Modern Science</p>
+                <div class="mt-4 inline-block px-3 py-1 rounded-full bg-accent/20 text-accent text-sm font-bold">CGPA:
+                    7.83</div>
+            </div>
+
+            <!-- Higher Secondary -->
+            <div class="glass p-6 rounded-xl relative overflow-hidden group">
+                <div
+                    class="absolute top-0 right-0 w-24 h-24 bg-blue-500/10 rounded-bl-full -mr-4 -mt-4 transition-all group-hover:bg-blue-500/20">
+                </div>
+                <h3 class="text-xl font-bold mb-1">Higher Secondary</h3>
+                <p class="text-sm text-gray-400 mb-4">2022</p>
+                <p class="text-gray-300 font-medium">WBCHSE</p>
+                <div class="mt-4 inline-block px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold">
+                    84.8%</div>
+            </div>
+
+            <!-- Madhyamik -->
+            <div class="glass p-6 rounded-xl relative overflow-hidden group">
+                <div
+                    class="absolute top-0 right-0 w-24 h-24 bg-green-500/10 rounded-bl-full -mr-4 -mt-4 transition-all group-hover:bg-green-500/20">
+                </div>
+                <h3 class="text-xl font-bold mb-1">Madhyamik</h3>
+                <p class="text-sm text-gray-400 mb-4">2020</p>
+                <p class="text-gray-300 font-medium">WBBSE</p>
+                <div class="mt-4 inline-block px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-bold">
+                    75%</div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-white/10 text-center text-gray-500 text-sm">
+        <p>© 2026 Raima Maity. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
